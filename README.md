@@ -26,8 +26,12 @@ Within a page object, the clear separation of element *selection* and *interacti
 3. Create page objects in `e2e/pages` folder. Add new page class to `e2e/pages/index.ts`
 4. Adjust test to fulfil your pages expectations
 
+#### General rules on end-to-end test development
+- keep page methods self-explanatory
+- separate element querying logic from actions and assertions against them
+
 ### API Tests
-API tests are structured to detach client code from test code in `CatFactsApiClient`, making request calling easier.
+API tests are structured to detach client code from test code in `CatFactsApiClient`, making request calling easier. [Chai](https://www.chaijs.com/) is used to assertions.
 
 #### How to develop new test?
 1. Add desired endpoint to `CatFactsApiClient` class
