@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "cypress"]
+    },
+    "lib": ["es5", "dom"],
+    "types": ["cypress"]
+  },
+  "include": ["**/*.ts", "plugins/index.js", "tests/__name__.spec.ts.template"]
+}

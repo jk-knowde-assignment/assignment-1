@@ -1,0 +1,15 @@
+import Resolution from 'data/Resolution';
+
+Resolution.All.forEach((resolution) => {
+  describe(`<test suite name> (resolution: ${resolution})`, () => {
+    before(() => resolution.switch());
+    it('<test name>', () =>
+      cy.goTo(FirstPage, (page) => {
+        page.interactionMethod();
+        page.asertionMethod();
+      })).thenOn(SecondPage, (page => {
+        page.interactionMethod();
+        page.assertionMethod();
+      }));
+  });
+});

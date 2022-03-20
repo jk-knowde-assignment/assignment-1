@@ -1,0 +1,10 @@
+{
+  "chromeWebSecurity": false,
+  "baseUrl": "https://www.saucedemo.com",
+  "pluginsFile": false,
+  "fixturesFolder": false,
+  "integrationFolder": "e2e/tests",
+  "supportFile": "e2e/support/index.ts",
+  "screenshotsFolder": "e2e/screenshots",
+  "video": false
+}

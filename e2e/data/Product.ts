@@ -1,0 +1,1 @@
+export type Product = 'backpack' | 'bike-light' | 'bolt-t-shirt' | 'fleece-jacket' | 'onesie'; 
